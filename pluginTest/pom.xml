@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.newland</groupId>
+  <artifactId>dummy</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>dummy</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>4.3.22.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.3.22.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>netbank.firm.apitool</groupId>
+      <artifactId>firm-api-tool-base</artifactId>
+      <version>1.3.3-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.cib.cap4i</groupId>
+      <artifactId>cap4i-core</artifactId>
+      <version>1.3.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>netbank.firm.apitool</groupId>
+      <artifactId>firm-api-tool-model</artifactId>
+      <version>1.3.3-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.10.2</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+      <plugins>
+        <plugin>
+          <groupId>com.newland</groupId>
+          <artifactId>gendoc-maven-plugin</artifactId>
+          <version>1.0-SNAPSHOT</version>
+          <executions>
+            <execution>
+              <phase>compile</phase>
+              <goals>
+                <goal>gendoc</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <scanPackagePath>com.newland1</scanPackagePath>
+            <outputPath>d:\</outputPath>
+            <fileType>EXCEL</fileType>
+            <dtoBaseDir>F:\firm-api-tool\firm-api-tool-model</dtoBaseDir>
+            <apiContextPath>/firm/cashapi</apiContextPath>
+          </configuration>
+        </plugin>
+      </plugins>
+  </build>
+</project>
