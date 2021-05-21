@@ -1,0 +1,85 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@zsmud 
+zsmud
+/
+spring-boot
+forked from spring-projects/spring-boot
+ Unwatch 
+1
+ Star 0  Fork 33.7k
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+ master 
+spring-boot/.gitignore
+Go to file
+ 
+ 
+40 lines (40 sloc)  407 Bytes
+Raw Blame
+    
+*#
+*.iml
+*.ipr
+*.iws
+*.jar
+*.sw?
+*~
+.#*
+.*.md.html
+.DS_Store
+.classpath
+.factorypath
+.gradle
+.idea
+.metadata
+.project
+.recommenders
+.settings
+.springBeans
+/build
+/code
+MANIFEST.MF
+_site/
+activemq-data
+bin
+build
+build.log
+dependency-reduced-pom.xml
+dump.rdb
+interpolated*.xml
+lib/
+manifest.yml
+overridedb.*
+settings.xml
+target
+transaction-logs
+.flattened-pom.xml
+secrets.yml
+.gradletasknamecache
+.sts4-cache
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
