@@ -1,36 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@zsmud 
-zsmud
-/
-spring-boot
-forked from spring-projects/spring-boot
- Unwatch 
-1
- Star 0  Fork 33.7k
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
- master 
-spring-boot/.gitignore
-Go to file
- 
- 
-40 lines (40 sloc)  407 Bytes
-Raw Blame
-    
 *#
 *.iml
 *.ipr
